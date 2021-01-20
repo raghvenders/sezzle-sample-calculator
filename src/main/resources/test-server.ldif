@@ -1,0 +1,37 @@
+dn: dc=sezzle,dc=org
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: sezzle
+
+dn: ou=groups,dc=sezzle,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+
+dn: ou=people,dc=sezzle,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+
+dn: uid=tom,ou=people,dc=sezzle,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: tom tim
+sn: tim
+uid: tom
+userPassword: $2a$10$wAuNjZk8wfxYTOIU0JI3f.3VlqlRkfgp.DeVJ2upLsMXgLMQt0/bK
+
+dn: uid=harry,ou=people,dc=sezzle,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: harry garry
+sn: garry
+uid: harry
+userPassword: $2a$10$v6CrRP0u.RxPG3HDgmb8wuYYbVApCDCPBwnB1AVWM5Nt5rEOR3ycW
