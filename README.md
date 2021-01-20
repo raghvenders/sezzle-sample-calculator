@@ -27,7 +27,7 @@ git clone https://github.com/raghvenders/sezzle-sample-calculator.git
 cd sezzle-sample-calculator
 ```
 
-#Build
+## Build
 
 To build the project as a standalone java web application
 
@@ -53,7 +53,7 @@ docker run -p 8080:8080 <username>/sezzle-sample-calculator
 <B>Note :</B> Kindly make sure the installed docker is running.
 
 
-##Development
+## Development
 
 This project can be imported as a gradle project in intellij and we can flexibly use various other gradle tasks and run dependencies.
 For Javascript, react plugins can be used for intellij or use vscode/chrome browser to modify or validate the changes.
@@ -61,7 +61,7 @@ For Javascript, react plugins can be used for intellij or use vscode/chrome brow
 -Password Generator util will help you to encrypt the password to be used in LDAP conf - test-server.ldif
 
 
-##Use the Application
+## Use the Application
 1. Launch the application locally - http://127.0.0.1:8080 or http://localhost:8080
 
 2. Login as one of the below users in the login page
@@ -75,18 +75,23 @@ For Javascript, react plugins can be used for intellij or use vscode/chrome brow
 
 5.The user session time out is 15 minutes.
 
-6.Anytime you can login back and the see the latest results.
+6.Anytime you can log in back, and see the latest results.
 
-##Known Information and trouble shooting
-1. This project is currently made to run as a javascript and java bundled application.But the UI react components can be 
+## Known Information and trouble shooting
+1. The application is currently hosted on http://ec2-54-226-155-58.compute-1.amazonaws.com:8080/ and it is not https yet.
+
+2. This project is currently made to run as a javascript and java bundled application.But the UI react components can be 
 updated to run as a standalone UI with nodejs mock server.
 
 2. If we tend to build and run project multiple times or run in both approach we might encounter port binding error 8080.
 Either modify the port in application.properties and docker run command or kill the existing process.
 
-3. Make sure 8389 port is not occupied, as it will be used by the LDAP server for user authentication.
+3. If any update is not reflecting in the result board due to Websocket connection lost , 
+   browser refresh does help to re-establish the connection.
 
-4. React Jest dom and spring boot Junits are yet to be updated.
+4. Make sure 8389 port is not occupied, as it will be used by the LDAP server for user authentication.
+
+5. React Jest dom and spring boot Junits are yet to be updated.
 
 
 
