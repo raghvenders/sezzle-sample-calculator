@@ -45,7 +45,7 @@ First time run will take time as gradle wrapper downloads the external distribut
 To build the application in a container, run the following to build the container image and run it:
 
 ```
-./gradle bootWar
+./gradlew bootWar
 docker build -t <username>/sezzle-sample-calculator .
 docker run -p 8080:8080 <username>/sezzle-sample-calculator
 ```
