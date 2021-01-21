@@ -80,18 +80,16 @@ For Javascript, react plugins can be used for intellij or use vscode/chrome brow
 ## Known Information and trouble shooting
 1. The application is currently hosted on http://ec2-54-226-155-58.compute-1.amazonaws.com:8080/ and it is not https yet.
 
-2. This project is currently made to run as a javascript and java bundled application.But the UI react components can be 
-updated to run as a standalone UI with nodejs mock server.
+2. If any update is not reflecting in the result board due to Websocket connection lost or as load results are not synchronized possibly out of sync, 
+   browser refresh does help to get the latest result or we could synchronize the operation at a cost.
 
-2. If we tend to build and run project multiple times or run in both approach we might encounter port binding error 8080.
+3. If we tend to build and run project multiple times or run in both approach we might encounter port binding error 8080.
 Either modify the port in application.properties and docker run command or kill the existing process.
 
-3. If any update is not reflecting in the result board due to Websocket connection lost , 
-   browser refresh does help to re-establish the connection.
 
 4. Make sure 8389 port is not occupied, as it will be used by the LDAP server for user authentication.
 
-5. React Jest dom and spring boot Junits are yet to be updated.
+6. React Jest dom and spring boot Junits are yet to be updated.
 
 
 
