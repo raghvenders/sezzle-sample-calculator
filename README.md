@@ -64,21 +64,16 @@ For Javascript, react plugins can be used for intellij or use vscode/chrome brow
 ## Use the Application
 1. Launch the application locally - http://127.0.0.1:8080 or http://localhost:8080
 
-2. Login as one of the below users in the login page
-```
-     tom/apple
-     harry/orange
-```
-3.Do the work in your calculator and "=" will bring you the result and add it to the live result board.
+2.Do the work in your calculator and "=" will bring you the result and add it to the live result board.
 
-4.The result board keeps track of latest 10 results of both the users.
+3.The result board keeps track of latest 10 results of both the users.
 
-5.The user session time out is 15 minutes.
+4.The user session time out is 15 minutes.
 
-6.Anytime you can log in back, and see the latest results.
+5.Anytime you can log in back, and see the latest results.
 
 ## Known Information and trouble shooting
-1. The application is currently hosted on http://ec2-54-226-155-58.compute-1.amazonaws.com:8080/ and it is not https yet.
+1. The application is currently hosted on  http://ec2-3-83-251-33.compute-1.amazonaws.com:8080/ and it is not https yet.
 
 2. If any update is not reflecting in the result board due to Websocket connection lost or as load results are not synchronized possibly out of sync, 
    browser refresh does help to get the latest result or we could synchronize the operation at a cost.
